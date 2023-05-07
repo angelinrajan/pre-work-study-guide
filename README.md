@@ -1,4 +1,4 @@
-# <Pre-Work Study Guide Webpage>
+# Pre-Work Study Guide Webpage
 
 ## Description
 - Taking this bootcamp to learn how to code so I can eventually become a software engineer.
