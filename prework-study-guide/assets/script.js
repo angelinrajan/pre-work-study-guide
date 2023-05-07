@@ -1,17 +1,4 @@
 
- /*
-if (topic === 'HTML') {
- console.log("Let's study HTML!");
-} else if (topic === 'CSS') {
- console.log("Let's study CSS!");
-} else if (topic === 'Git') {
- console.log("Let's study Git!");
-} else if (topic === 'JavaScript') {
- console.log("Let's study JavaScript!");
-} else {
- console.log('Please try again!');
-}
-*/
  /*var shapes = ["triangle", "square", "pentagon", "circle"];
  for(var x = 0; x<shapes.length; x++) {
     console.log(shapes[x]);
@@ -28,8 +15,28 @@ console.log(shapes[3]);
  //x++ is a shortcut way of writing x+1. this allows the array to increase by 1
  */
 
- var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
- for(var a = 0; a<topics.length; a++) {
-    console.log(topics[a]);
- }
+    var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+    var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+    function listTopics() {
+        for(var a = 0; a<topics.length; a++) {
+            console.log(topics[a]);
+    }
+}
  
+function selectTopic() {
+    if (randomTopic === 'HTML') {
+        console.log("Let's study HTML!");
+       } else if (randomTopic === 'CSS') {
+        console.log("Let's study CSS!");
+       } else if (randomTopic === 'Git') {
+        console.log("Let's study Git!");
+       } else if (randomTopic === 'JavaScript') {
+        console.log("Let's study JavaScript!");
+       } else {
+        console.log('Please try again!');
+       }
+}
+console.log('Here are the topics we learned through Prework:');
+listTopics()
+console.log('Which topic should we study first?');
+selectTopic()
